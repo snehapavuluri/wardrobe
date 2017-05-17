@@ -1,0 +1,121 @@
+<!doctype html>
+<html lang="en" ng-app="phonecatApp">
+<head>
+  <meta charset="utf-8">
+  <title>Wardrobe Assistant</title>
+
+    <link rel="stylesheet" type="text/css" href="partials/CSS/jquery-ui.css" />
+    <link rel="stylesheet" type="text/css" href="partials/CSS/jquery-ui.min.css" />
+    <link rel="stylesheet" type="text/css" href="partials/CSS/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="partials/CSS/bootstrap-dialog.min.css" />
+    <link rel="stylesheet" type="text/css" href="partials/CSS/landing-page.css" />
+    <link href="http://ironsummitmedia.github.io/startbootstrap-sb-admin/font-awesome/css/font-awesome.min.css"
+        rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="partials/CSS/design.css" />
+        
+    <link rel="stylesheet" type="text/css" href="partials/CSS/font-awesome.css" />
+
+    <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="bower_components/angular/angular.js"></script>
+    <script src="bower_components/angular-animate/angular-animate.js"></script>
+    <script src="bower_components/angular-route/angular-route.js"></script>
+    <script src="bower_components/angular-resource/angular-resource.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/animations.js"></script>
+    <script src="js/controllers.js"></script>
+    <script src="js/filters.js"></script>
+    <script src="js/services.js"></script>
+    <script type="text/javascript" src="partials/JS/jquery-2.1.4.min.js"></script>
+    <script type="text/javascript" src="partials/JS/jquery.min.js"></script>
+    <script type="text/javascript" src="partials/JS/jquery-ui.js"></script>
+    <script type="text/javascript" src="partials/JS/bootstrap.min.js"></script>
+    <script type="text/javascript" src="partials/JS/bootstrap-dialog.min.js"></script>
+    <script type="text/javascript" src="partials/JS/AccountSettingsCtrl.js" ></script>
+    <script type="text/javascript" src="partials/JS/RegistrationCtrl.js" ></script>
+    <script type="text/javascript" src="partials/JS/LoginCtrl.js"></script>
+    <script type="text/javascript" src="partials/JS/WardrobeItemCtrl.js"></script>
+    
+	<style>
+        .carousel-inner > .item > img, .carousel-inner > .item > a > img
+        {
+            width: 100%;
+            margin: auto;
+        }
+    </style>
+
+    <style>
+        body
+        {
+            background-color: #ddd;
+        }
+        
+        h3
+        {
+            margin-top: 0;
+        }
+        
+        .tabs-left
+        {
+            margin-top: 3rem;
+        }
+        
+        .nav-tabs
+        {
+            float: left;
+            border-bottom: 0;
+        }
+        .nav-tabs li
+        {
+            float: none;
+            margin: 0;
+        }
+        .nav-tabs li a
+        {
+            margin-right: 0;
+            border: 0;
+            background-color: #385269;
+        }
+        .nav-tabs li a:hover
+        {
+            background-color: #365167;
+        }
+        .nav-tabs .glyphicon
+        {
+            color: #fff;
+        }
+        .nav-tabs .active .glyphicon
+        {
+            color: #333;
+        }
+        
+        .nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus
+        {
+            border: 0;
+        }
+        
+        .tab-content
+        {
+            margin-left: 45px;
+        }
+        .tab-content .tab-pane
+        {
+            display: none;
+            background-color: #fff;
+            padding: 1.6rem;
+            overflow-y: auto;
+        }
+        .tab-content .active
+        {
+            display: block;
+        }
+    </style>
+        
+</head>
+<body>
+
+  <div class="view-container">
+    <div ng-view class="view-frame"></div>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,491 @@
+﻿
+    <nav class="navbar navbar-default navbar-fixed-top topnav" role="navigation">
+        <div class="topnav">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                    <span class="sr-only">Toggle navigation</span> <span class="icon-bar"></span><span
+                        class="icon-bar"></span><span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand title" href="WardrobeAssistant.html">Wardrobe Assistant</a>
+            </div>
+            <!-- Collect the nav links, forms, and other content for toggling -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav navbar-right">
+                    <li class=""><a href="#/Landing" class="animate">Home</a></li>
+                    <li class=""><a href="#/Landing" class="animate">About Us</a></li>
+                    <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="" ><i
+                        class="fa fa-user fa-fw"></i><i class="fa fa-caret-down"></i></a>
+                        <ul class="dropdown-menu dropdown-user">
+                            <li><a href="#/AccountSettings"><i class="fa fa-user fa-fw"></i>Firstname Lastname</a>
+                            </li>
+                            <li class="divider"></li>
+                            <li><a href="#/login"><i class="fa fa-sign-out fa-fw"></i>Logout</a> </li>
+                        </ul>
+                        <!-- /.dropdown-user -->
+                    </li>
+                </ul>
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container -->
+    </nav>
+    <div>
+        <div class="body slide">
+            <aside class="sidebar show perfectScrollbar">
+                <div id="solso-sidebar">
+                    <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+                        <div class="panel panel-default">
+                            <div class="panel-heading" role="tab" id="heading2">
+                                <h4 class="panel-title">
+                                    <a data-toggle="collapse" data-parent="#accordion" href="#/SearchWardrobe/#collapse2" aria-expanded="true"
+                                        aria-controls="collapse2" class="">My Wardrobe <i class="pull-right fa fa-caret-down">
+                                        </i></a>
+                                </h4>
+                            </div>
+                             <div id="collapse2" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="heading2"
+                                aria-expanded="true" >
+                                <div>
+                                    <a href="#/SearchWardrobe/#divAddItem" class="list-group-item" data-toggle="modal" data-target="#divAddItem">Add
+                                        An Item</a> 
+                                    <a  href="#/RemoveWardrobeItems"
+                                        class="list-group-item">Remove Items</a> 
+                                    <a  href="#/SearchWardrobe" class="list-group-item solso-active">
+                                            Search Wardrobe</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading1">
+                                    <h4 class="panel-title">
+                                        <a href="#/OutfitPlanner" class="single-item">Outfit Planner </a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading2">
+                                    <h4 class="panel-title">
+                                        <a href="#/Landing" class="single-item">Tutorial</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading3">
+                                    <h4 class="panel-title">
+                                        <a href="#/AccountSettings" class="single-item">Account Settings</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="panel panel-default">
+                            <div class="panel panel-default">
+                                <div class="panel-heading" role="tab" id="heading4">
+                                    <h4 class="panel-title">
+                                        <a href="#/Login" class="single-item">Log Out</a>
+                                    </h4>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </aside>
+
+		<div class="container-fluid left-border">
+                <div class="row">
+                    <div class="col-lg-10 col-md-10 col-xs-10 col-sm-10">
+                        <h1>
+                            <i class="fa fa-search fa-2"></i>Search Wardrobe
+                        </h1>
+                    </div>
+                </div>
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                            <section class="form-group">
+                                <div class="input-group dat">
+                                    <input type="text" class="form-control form-controlSearch pull-right" placeholder="Search">
+                                    <span class=" input-group-addon"><i class="glyphicon glyphicon-search"></i></span>
+                                </div>
+                            </section>
+                            <div id="divMasterDetailWrapper">
+                                <div class="tabs-left">
+                                    <ul class="nav nav-tabs" style="height: 600px;">
+                                        <li><a href="#/SearchWardrobe/#Hats" data-toggle="tab" id="hats" style="height: 60px;
+                                            font-size: 20pt;"><span>Hats</span></a></li>
+                                        <li><a href="#/SearchWardrobe/#Outerwear" data-toggle="tab" style="height: 60px; font-size: 20pt;"><span>
+                                            Outerwear</span> </a></li>
+                                        <li><a href="#/SearchWardrobe/#Tops" id="topps" data-toggle="tab" style="height: 60px; font-size: 20pt;">
+                                            <span>Tops </span></a></li>
+                                        <li><a href="#/SearchWardrobe/#Pants" data-toggle="tab" id="pants" style="height: 60px; font-size: 20pt;">
+                                            <span>Pants </span></a></li>
+                                        <li><a href="#/SearchWardrobe/#Shoes" data-toggle="tab" style="height: 60px; font-size: 20pt;"><span>
+                                            Shoes</span> </a></li>
+                                        <li><a href="#/SearchWardrobe/#Accessories" data-toggle="tab" style="height: 60px; font-size: 20pt;">
+                                            <span>Accessories</span> </a></li>
+                                        <li><a href="#/SearchWardrobe/#Outfits" data-toggle="tab" style="height: 60px; font-size: 20pt;"><span>
+                                            Outfits</span> </a></li>
+                                    </ul>
+                                    <div id="myTabContent" class="tab-content" style="height: 600px;">
+                                        <div class="tab-pane" id="Hats">
+                                            <div id="divMasterView">
+                                                <table>
+                                                    <tr ng-repeat="itemRows in allItems">
+                                                        <td style="vertical-align: top;" ng-repeat="itemColumn in itemRows" >
+                                                            <ul class="thumbnails">
+                                                                <li>
+                                                                    <div class="thumbnail">
+                                                                        <img ng-src={{itemColumn.imageURL}} ng-click="showdetails(itemColumn)" class="img-responsive img-thumbnail"
+                                                                            alt="Thumbnail Image" data-toggle="modal" data-target="#divShirt">
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+										<div class="tab-pane" id="Outerwear">
+                                            There are no Outerwear in your Wardbrode ...
+                                            <br />
+                                            <br />
+                                            Try <a href="#/SearchWardrobe/#divAddItem" class="link" data-toggle="modal" data-target="#divAddItem">Adding Some
+                                                ?</a>
+												
+										 
+                                        </div>
+										<div class="tab-pane" id="Tops">
+                                            <div id="divMasterView">
+                                                <table>
+                                                    <tr ng-repeat="itemRows in allTopItems">
+                                                        <td style="vertical-align: top;" ng-repeat="itemColumn in itemRows" >
+                                                            <ul class="thumbnails">
+                                                                <li>
+                                                                    <div class="thumbnail">
+                                                                        <img ng-src={{itemColumn.imageURL}} ng-click="showdetails(itemColumn)" class="img-responsive img-thumbnail"
+                                                                            alt="Thumbnail Image" data-toggle="modal" data-target="#divShirt">
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+										<div class="tab-pane" id="Pants">
+                                            <div id="divMasterView">
+                                                <table>
+                                                    <tr ng-repeat="itemRows in allPantItems">
+                                                        <td style="vertical-align: top;" ng-repeat="itemColumn in itemRows" >
+                                                            <ul class="thumbnails">
+                                                                <li>
+                                                                    <div class="thumbnail">
+                                                                        <img ng-src={{itemColumn.imageURL}} ng-click="showdetails(itemColumn)" class="img-responsive img-thumbnail"
+                                                                            alt="Thumbnail Image" data-toggle="modal" data-target="#divShirt">
+                                                                    </div>
+                                                                </li>
+                                                            </ul>
+                                                        </td>
+                                                    </tr>
+                                                </table>
+                                            </div>
+                                        </div>
+
+									</div>
+                                    <!-- /tab-content -->
+                                </div>
+                            </div>
+                            <!-- /tabbable -->
+                        </div>
+                        <!-- /col -->
+                    </div>
+                    <!-- /row -->
+                </div>
+            </div>
+            <!-- Modal HTML -->
+            <div ng-model="itemDetails" id="divItemDetails" class="modal fade" data-backdrop="false">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header popupPanelHeader">
+                            <div class="row">
+                                <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
+                                    <h4 class="modal-title">
+                                        Item Details
+                                    </h4>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+                                    <h4 class="modal-title">
+                                        <label id="Label8" class="lblAns">
+                                            Item Details</label>
+                                        <input type="text" ng-model="item.Name" class="form-control textAns hidden" /></h4>
+                                </div>
+                                <div class="col-lg-1 col-md-1 col-xs-1 col-sm-1">
+                                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                                        ×</button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-body">
+                            <div class="row">
+                                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                            <label class="control-label">
+                                                Type</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                            <label id="Label1" class="control-label lblAns">
+                                                {{itemDetails.category}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                            <label class="control-label">
+                                                Color</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                            <label id="Label2" class="control-label lblAns">
+                                                {{itemDetails.color}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                            <label class="control-label">
+                                                Pattren</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                            <label id="Label3" class="control-label lblAns">
+                                                {{itemDetails.pattren}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                            <label class="control-label">
+                                                Size</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                            <label id="Label4" class="control-label lblAns">
+                                                {{itemDetails.size}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                            <label class="control-label">
+                                                Style</label>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                            <label id="Label5" class="control-label lblAns">
+                                                {{itemDetails.style}}</label>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                    <div class="row">
+                                        <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                                            <img src='{{itemDetails.imageURL}}' class="img-responsive img-thumbnail" alt="Thumbnail Image">
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                            <button type="button" class="btn-link textAns hidden">
+                                                Change Picture
+                                            </button>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                            <button type="button" class="btn-link textAns hidden">
+                                                Remove Picture
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                                    <label class="control-label">
+                                        Parts of Outfits
+                                    </label>
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+                                    <label class="control-label">
+                                        Notes
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                                    <label id="Label6" class="control-label lblAns">
+                                        Part Of Outfit</label>
+  
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+                                    <label id="Label7" class="control-label lblAns">
+                                        Notes </label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="modal-footer">
+                            <div class="center-block" style="text-align: center;">
+                                <button type="button" id="btnEdit" class="btn btn-primary" onclick="readonlyDisable();">
+                                    Edit</button>
+                                <button type="button" id="btnSave" class="btn btn-primary hidden" onclick="UpdateItem();">
+                                    Save</button>
+                                <button type="button" id="btnCancel" class="btn btn-warning hidden" onclick="readonlyEnable();">
+                                    Cancel</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+			<div id="divAddItem" ng-hide="saveFlag" class="modal fade" data-backdrop="false">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header popupPanelHeader">
+                        <div class="row">
+                            <div class="col-lg-3 col-md-3 col-xs-3 col-sm-3">
+                                <h4 class="modal-title">
+                                    Item Details
+                                </h4>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                                <h4 class="modal-title">
+                                    <textarea id="txtArea" rows="2" cols="40" ng-model="item.Note"></textarea>
+                         		</h4>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                                        <label class="control-label">
+                                            Category</label>
+                                    </div>
+									<div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+										   <select id="Select1" class="form-control" ng-model="selCat" >
+                                                <option ng-repeat="itemca in categories" value= {{itemca}} >
+                                                    {{itemca}}</option>
+                                            </select>
+
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                                        <label class="control-label">
+                                            Type</label>
+                                    </div>
+									<div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+										   <select id="Select2" class="form-control" ng-model="selType" >
+                                                <option ng-repeat="itemt in categories" value= {{itemt}} >
+                                                    {{itemt}}</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                                        <label class="control-label">
+                                            Color</label>
+                                    </div>
+									<div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+										   <select id="Select3" class="form-control" ng-model="selColor" >
+                                                <option ng-repeat="itemc in colors" value= {{itemc}} >
+                                                    {{itemc}}</option>
+                                            </select>
+                                    </div>
+                                </div>
+	                            <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                                        <label class="control-label">
+                                            Pattren</label>
+                                    </div>
+									<div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+										   <select id="Select4" class="form-control" ng-model="selPattern" >
+                                                <option ng-repeat="itemp in patterns" value= {{itemp}} >
+                                                    {{itemp}}</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                                        <label class="control-label">
+                                            Size</label>
+                                    </div>
+									<div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+										   <select id="Select5" class="form-control" ng-model="selSize" >
+                                                <option ng-repeat="itemsi in sizes" value= {{itemsi}} >
+                                                    {{itemsi}}</option>
+                                            </select>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4 col-md-4 col-xs-4 col-sm-4">
+                                        <label class="control-label">
+                                            Style</label>
+                                    </div>
+									<div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+										   <select id="Select6" class="form-control" ng-model="selStyle" >
+                                                <option ng-repeat="items in styles" value= {{items}} >
+                                                    {{items}}</option>
+                                            </select>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                <div class="row">
+                                    <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+                                        <img src='{{item.Image}}' ng-model="item.Image" class="img-responsive img-thumbnail"
+                                            alt="Thumbnail Image">
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-6 col-md-6 col-xs-6 col-sm-6">
+                                        <input id="fileImage" type="file" ng-model="item.Image" />
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-8 col-md-8 col-xs-8 col-sm-8">
+                                Notes
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-lg-12 col-md-12 col-xs-12 col-sm-12">
+								<textarea id="txtArea" rows="2" cols="70" ng-model="item.Note"></textarea>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+						<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <input type="Button" value="Add to list" class="btn btn-primary" ng-click="addItem()" />
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <script type="text/javascript">
+        var tabsFn = (function () {
+
+            function init() {
+                setHeight();
+            }
+
+            function setHeight() {
+                var $tabPane = $('.tab-pane'),
+        tabsHeight = $('.nav-tabs').height();
+
+                $tabPane.css({
+                    height: tabsHeight
+                });
+            }
+
+            $(init);
+        })();
+    </script>
+
+
